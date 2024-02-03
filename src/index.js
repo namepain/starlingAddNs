@@ -16,10 +16,13 @@ const isI18Call = (callee, t) => {
   return false;
 }
 
-const logArr = [];
 
 module.exports = function ({ types: t }) {
+  const logArr = [];
   return {
+    post() {
+      console.log(logArr);
+    },
     visitor: {
       CallExpression(path) {
         const { arguments: args, callee } = path.node;
