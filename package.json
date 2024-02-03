@@ -1,0 +1,14 @@
+{
+  "scripts": {
+    "build": "babel ./src/index.js --out-file ./lib/index.js",
+		"example": "babel ./example/index.js --out-file ./example/output.js",
+    "test": "jest"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.23.9",
+    "@babel/core": "^7.23.9",
+    "@babel/types": "^7.23.9"
+  }
+}
