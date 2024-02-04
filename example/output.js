@@ -1,3 +1,6 @@
+const eee = i18n.t('gcrm.acct.hi', 'Hi, {man}!', {
+  ns: 'abc'
+});
 const ddd = i18n.t('gcrm.acct.hi', 'Hi, {man}!', {
   ns: "abc"
 });
